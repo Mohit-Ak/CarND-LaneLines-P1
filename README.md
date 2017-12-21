@@ -1,29 +1,28 @@
 # **Finding Lane Lines on the Road** 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-<img src="examples/laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
-
 Overview
 ---
+ The lines on the road act as our constant reference for where to steer the vehicle.  The aim of this project is to develop a self-driving car autmatic lane detection system using Python and OpenCV. A pipeline processing is applied to a series of individual images and ultimately to a video stream.
 
-When we drive, we use our eyes to decide where to go.  The lines on the road that show us where the lanes are act as our constant reference for where to steer the vehicle.  Naturally, one of the first things we would like to do in developing a self-driving car is to automatically detect lane lines using an algorithm.
+## Expected Output
+<img src="examples/laneLines_thirdPass.jpg" width="480" alt="Combined Image" />
 
-In this project we detect lane lines in images using Python and OpenCV.
 
 ## Requirements
----
+
 - Anaconda with Python 3 (Which internally includes all the other requirements)
 - jupyter
 
 
 ## Setup
----
+
 ```
 - git clone https://github.com/Mohit-Ak/CarND-LaneLines-P1.git
 - cd CarND-LaneLines-P1
-#### For CPU
+- For CPU
 - conda env create -f environment.yml
-#### For GPU
+- For GPU
 - source activate carnd-term1
 - jupyter notebook Lane_Detection_Project.ipynb
 
@@ -31,8 +30,9 @@ In this project we detect lane lines in images using Python and OpenCV.
 
 ## Sample Output Images
 ---
+The test images are located under - test_images
 ### solidWhiteCurve
-![solidWhiteCurve](test_images_output/solidWhiteCurve.png)
+![solidWhiteCurve](test_images_output/solidWhiteCurve.jpg)
 
 ### solidWhiteRight
 ![solidWhiteRight](test_images_output/solidWhiteRight.jpg)
@@ -48,4 +48,11 @@ In this project we detect lane lines in images using Python and OpenCV.
 
 ### whiteCarLaneSwitch
 ![whiteCarLaneSwitch](test_images_output/whiteCarLaneSwitch.jpg)
+
+## Sample Videos
+---
+Test Videos are located under - test_videos
+Test Videos output are located under - test_videos_output
+
+## Conclusion
 
