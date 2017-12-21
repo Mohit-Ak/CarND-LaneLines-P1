@@ -27,6 +27,15 @@ Overview
 - jupyter notebook Lane_Detection_Project.ipynb
 
 ```
+
+## Input
+- Images inside test_images automatically read
+- Videos inside test_videos automatically read
+
+## Output
+- Output Images written to test_images_output
+- Output Videos written to test_videos_output
+
 ## Pipeline
 ![pipeline_image](pipeline_image.png)
 
