@@ -1,7 +1,7 @@
 # **Finding Lane Lines on the Road** 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-### The project has been implemented to identify lane lines on the road. A pipeline processing is applied to a series of individual images and ultimately a video stream. All the images from "test_images" are read and and processed. All videos from "test_videos" directory are read and processed. Ultimately, one line is drawn for the left side of the lane, and one for the right hand side. The corresponding outputs are written to test_images_output and test_videos_output directory.
+### The project has been implemented to identify lane lines on the road. A pipeline processing is applied to a series of individual images and ultimately to a video stream. All the images from "test_images" are read and and processed. All videos from "test_videos" directory are read and processed. Ultimately, one line is drawn for the left side of the lane, and one for the right hand side. The corresponding outputs are written to test_images_output and test_videos_output directory.
 
 
 ---
@@ -25,7 +25,7 @@
 ### Pipeline Image
 ![pipeline_image](pipeline_image.png)
 
-### Output Images
+### 2. Output Images
 ---
 The test images are located under - test_images
 ### solidWhiteCurve
@@ -46,15 +46,15 @@ The test images are located under - test_images
 ### whiteCarLaneSwitch
 ![whiteCarLaneSwitch](test_images_output/whiteCarLaneSwitch.jpg)
 
-## Output Videos
+## 3. Output Videos
 ---
-Test Videos are located under - test_videos
-Test Videos output are located under - test_videos_output
+- Test Videos are located under : test_videos
+- Test Videos output are located under : test_videos_output
 
-### Conclusion
+### 4. Conclusion
 Thus, we successfully apply various image processing techniques in a pipeline to mark the driving lanes in a color agnostic manner within the region of interest.
 
-###  Current Shortcomings
+### 5. Current Shortcomings
 
 - Not robust to image size.
 - Not robust to image resolution.
@@ -64,7 +64,7 @@ Thus, we successfully apply various image processing techniques in a pipeline to
 - Steep roads will be an issue because the line of the horizon shifts.
 
 
-### Suggest possible improvements to your pipeline
+### 6. Suggest possible improvements to your pipeline
 
 - Normalize the image so that the algortithm becomes size agnostic.
 - Detect the horizon (line between the sky and the earth) and determine the points for the new ROI.
