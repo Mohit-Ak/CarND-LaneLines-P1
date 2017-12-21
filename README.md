@@ -31,7 +31,7 @@ Overview
 ![pipeline_image](pipeline_image.png)
 
 
-## Sample Output Images
+## Output Images
 ---
 The test images are located under - test_images
 ### solidWhiteCurve
@@ -52,10 +52,29 @@ The test images are located under - test_images
 ### whiteCarLaneSwitch
 ![whiteCarLaneSwitch](test_images_output/whiteCarLaneSwitch.jpg)
 
-## Sample Videos
+## Output Videos
 ---
 Test Videos are located under - test_videos
 Test Videos output are located under - test_videos_output
 
-## Conclusion
+### Conclusion
+Thus, we successfully apply various image processing techniques in a pipeline to mark the driving lanes in a color agnostic manner within the region of interest.
+
+###  Current Shortcomings
+
+- Not robust to image size.
+- Not robust to image resolution.
+- I am from Buffalo and found a peculiar issue where the algorith does not differentiate Snow trails from Lane Markings.
+- Algorithm dpes not work on sharp curves / hairpin bends.
+- Not robust to the alignment of camera.
+- Steep roads will be an issue because the line of the horizon shifts.
+
+
+### Suggest possible improvements to your pipeline
+
+- Normalize the image so that the algortithm becomes size agnostic.
+- Detect the horizon (line between the sky and the earth) and determine the points for the new ROI.
+- To to determine the vertices of ROI polygon automatically.
+- ROI to be changed dynamically every frame.
+- Identify other markings within the lane.
 
