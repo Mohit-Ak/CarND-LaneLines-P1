@@ -27,6 +27,9 @@ Overview
 - jupyter notebook Lane_Detection_Project.ipynb
 
 ```
+## Pipeline
+![pipeline_image](pipeline_image.png)
+
 
 ## Sample Output Images
 ---
